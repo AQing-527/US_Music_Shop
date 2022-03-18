@@ -1,0 +1,354 @@
+body {
+    margin: 0;
+    background-color: aliceblue;
+}
+
+header {
+    background-color: skyblue;
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+    height: 39px;
+}
+
+header div {
+    padding: 0;
+    margin: 0;
+}
+
+#leftdiv {
+    display: inline-block;
+}
+
+#directory {
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 39px;
+    width: auto;
+}
+
+#directory a {
+    display: inline-block;
+    text-decoration-line: underline;
+}
+
+#directory p {
+    display: inline-block;
+}
+
+#rightdiv {
+    display: inline;
+    float: right;
+}
+
+h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#arrow {
+    /* padding-top: 5px; */
+    font-size: 10px;
+}
+
+#home,
+#musicD,
+#search,
+#login,
+#register,
+#cart,
+#logout {
+    border: none;
+    background: none;
+    font-size: 1em;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#home:hover,
+#musicD:hover,
+#search:hover,
+#login:hover,
+#cart:hover,
+#register:hover,
+#logout:hover {
+    background-color: aliceblue;
+}
+
+#leftdiv input {
+    width: 400px;
+    margin-left: 0;
+}
+
+#search {
+    margin-left: 5px;
+}
+
+#contents {
+    width: 500px;
+    margin: auto;
+    background-color: aliceblue;
+    padding: 20px;
+    padding-bottom:0px;
+    margin-bottom:15px;
+    /* text-align: center; */
+}
+
+.musicbox {
+    margin-top: 30px;
+    width: 500px;
+    padding: 20px;
+    padding-top: 5px;
+    padding-bottom:10px;
+    text-align: center;
+    vertical-align: top;
+    background-color: white;
+    box-shadow: 5px 5px 5px lightgray;
+}
+
+.titlebox {
+    width: 500px;
+    margin-top: 35px;
+}
+
+.imagebox {
+    width: 500px;
+}
+
+.audiobox {
+    margin-top: 20px;
+    width: 500px;
+}
+
+.textbox {
+    text-align: left;
+    width: 480px;
+}
+
+#order {
+    width: 300px;
+    margin: auto;
+}
+
+#num {
+    width: 140px;
+}
+
+label {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#order button {
+    display: inline;
+    float: right;
+    background-color: skyblue;
+    border: none;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 14px;
+    border-radius: 5px;
+    width: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#order button:hover {
+    background-color: #7ec1dc;
+}
+
+#warning {
+    text-align: center;
+    display: none;
+    color: red;
+    margin-top: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#logoutdiv{
+    position: sticky;
+    top: 30px;
+    padding-right: 20px;
+}
+
+#logoutMsg {
+    display: inline;
+    float: right;
+    /* padding-top: 0; */
+    color: red;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#addedMsg {
+    display: inline;
+    float: right;
+    padding-top: 0;
+    color:darkblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media screen and (max-width:1450px) {
+    #leftdiv input {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:1350px) {
+    #leftdiv input {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width:1250px) {
+    header {
+        height: 78px;
+    }
+
+    .musicbox {
+        margin-top:70px;
+    }
+
+    h2{
+        font-size: 19px;
+    }
+
+    #logoutdiv{
+        top: 75px;
+    }
+    
+    #home,
+    #musicD,
+    #search,
+    #login,
+    #register,
+    #cart,
+    #logout {
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (max-width:1080px) {
+
+    h3{
+        font-size: 16px;
+    }
+
+    .textbox p {
+        font-size: 13px;
+    }
+    
+    #home,
+    #musicD,
+    #search,
+    #login,
+    #register,
+    #cart,
+    #logout {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #num {
+        width: 100px;
+    }
+
+    #rightdiv {
+        float: unset;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width:750px) {
+    header {
+        height: 117px;
+    }
+
+    h2{
+        font-size: 16px;
+    }
+
+    #logoutdiv{
+        top: 117px;
+    }
+
+    #contents{
+        width: auto;
+        margin-left:20px;
+        margin-right:20px;
+    }
+
+    .musicbox {
+        width: auto;
+        margin-top: 110px;
+    }
+
+    .titlebox {
+        width: auto;
+        margin-top: 15px;
+    }
+    
+    .imagebox {
+        width: auto;
+    }
+    
+    .audiobox {
+        width: auto;
+    }
+    
+    .textbox {
+        width: auto;
+    }
+    
+    #order {
+        width: auto;
+        margin-left:40px;
+        margin-right:40px;
+    }
+
+    #num {
+        width: 50px;
+    }
+
+    #leftdiv input {
+        width: 150px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #home,
+    #musicD,
+    #search,
+    #login,
+    #register,
+    #cart,
+    #logout {
+        font-size: 10px;
+    }    
+}
+
+@media screen and (max-width:750px) {
+    h3{
+        font-size: 13px;
+    }
+
+    .textbox p {
+        font-size: 10px;
+    }
+    
+    #home,
+    #musicD,
+    #search,
+    #login,
+    #register,
+    #cart,
+    #logout{
+        font-size: 9px;
+    }
+}

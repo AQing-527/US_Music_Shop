@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    background-color: aliceblue;
+}
+
+h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h4{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.labels{
+    display: inline-block;
+    margin-right: 5px;
+}
+
+#contentWrapper {
+    width: 500px;
+    margin: auto;
+    /* border: solid; */
+    padding: 20px;
+}
+
+#logindiv{
+    margin-top: 20px;
+    padding: 10px 20px 10px 20px;
+    vertical-align: top;
+    background-color: white;
+    box-shadow: 5px 5px 5px lightgray;
+}
+
+#delivery {
+    margin-top: 20px;
+    padding: 10px 20px 10px 20px;
+    vertical-align: top;
+    background-color: white;
+    box-shadow: 5px 5px 5px lightgray;
+}
+
+#creatediv{
+    margin-bottom: 20px;
+}
+
+#lowerdiv{
+    margin-top: 20px;
+    padding: 10px 20px 10px 20px;
+    vertical-align: top;
+    background-color: white;
+    box-shadow: 5px 5px 5px lightgray;
+}
+
+/* #delivery div{
+    height: 50px;
+} */
+
+.textField{
+    display: inline;
+    float: right;
+    width: 280px;
+    height: 25px;
+    margin-top: 12.5px;
+
+}
+    
+h3 a,
+h4 a{
+    text-decoration: underline;
+    color:black;
+}
+
+a:visited{
+    color: black;
+}
+
+a:hover{
+    background-color: skyblue;
+}
+
+#bttns {
+    width: 120px;
+    margin: auto;
+}
+
+#bttns button {
+    margin-top:20px;
+    background-color: skyblue;
+    border: none;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+    width: 120px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#bttns button:hover {
+    background-color: #7ec1dc;
+}
+
+#warning{
+    text-align: center;
+    display: none;
+    color: red;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#duplicate p{
+    color: red;
+}
+
+
+@media screen and (max-width:700px) {
+    h2{
+        font-size: 17px;
+    }
+
+    h3{
+        font-size: 14px;
+    }
+
+    h4{
+        font-size: 13px;
+    }
+
+    p{
+        font-size: 12px;
+    }
+
+    #confirm{
+        font-size: 14px;
+    }
+    
+    #contentWrapper{
+        width: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .textField{
+        height:20px;
+        margin-top:10px;
+        font-size: 12px;
+    }
+
+    #bttns{
+        width: auto;
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width:550px) {
+    h2{
+        font-size: 15px;
+    }
+
+    h3{
+        font-size: 12px;
+    }
+
+    h4{
+        font-size: 11px;
+    }
+
+    p{
+        font-size: 10px;
+    }
+
+    #confirm{
+        font-size: 12px;
+    }
+    
+    .textField{
+        width: 150px;
+        margin-left: 20px;
+        float:unset;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .textField{
+        width: 100px;
+        margin-left: 0px;
+    }
+}

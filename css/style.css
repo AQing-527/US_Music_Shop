@@ -1,0 +1,322 @@
+body {
+    margin: 0;
+    background-color: aliceblue;
+}
+
+header {
+    background-color: skyblue;
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+    height: 39px;
+}
+
+header div {
+    padding: 0;
+    margin: 0;
+}
+
+#leftdiv {
+    display: inline-block;
+}
+
+#directory {
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 55px;
+    height: 39px;
+    width: 220px;
+}
+
+#directory a {
+    display: inline-block;
+    text-decoration-line: underline;
+}
+
+#directory p {
+    display: inline-block;
+}
+
+#rightdiv {
+    display: inline;
+    float: right;
+}
+
+#categoryWrapper ul li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#arrow {
+    /* padding-top: 5px; */
+    font-size: 10px;
+}
+
+#home,
+#categoryD,
+#search,
+#login,
+#register,
+#cart,
+#logout {
+    border: none;
+    background: none;
+    font-size: 1em;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#home:hover,
+#categoryD:hover,
+#search:hover,
+#login:hover,
+#cart:hover,
+#register:hover,
+#logout:hover {
+    background-color: aliceblue;
+}
+
+#leftdiv input {
+    width: 300px;
+    margin-left: 0;
+}
+
+#search {
+    margin-left: 5px;
+}
+
+#categoryWrapper {
+    padding-top: 70px;
+    position: sticky;
+    top: 0px;
+}
+
+#tags {
+    margin: 0;
+    list-style-type: none;
+    float: left;
+}
+
+#tags a:link {
+    color: black;
+    text-decoration: none;
+}
+
+#tags a:hover {
+    background-color: skyblue;
+}
+
+#tag a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+#contentWrapper {
+    margin-left: 250px;
+    padding: 0;
+    margin-right: 10px;
+}
+
+#contents{
+    margin-left: 15px;
+}
+
+#headingdiv {
+    height: 40px;
+}
+
+#contentHeading {
+    margin-top: 25px;
+    margin-bottom: 27px;
+    margin-left: 50px;
+    padding: 0;
+    height: 30px;
+}
+
+.musicbox {
+    display: inline-block;
+    width: 200px;
+    height: 500px;
+    margin: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    vertical-align: top;
+    background-color: white;
+    box-shadow: 5px 5px 5px lightgray;
+}
+
+.titlebox {
+    padding-top: 10px;
+    width: 200px;
+    height: 80px;
+}
+
+.titlebox a {
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.titlebox a:hover {
+    text-decoration-line: underline;
+}
+
+.imagebox {
+    width: 200px;
+    height: 300px;
+}
+
+.textbox {
+    width: 200px;
+    height: 120px;
+}
+
+#logoutdiv{
+    position: sticky;
+    top: 40px;
+    padding-right: 20px;
+}
+
+#logoutMsg {
+    display: inline;
+    float: right;
+    /* padding-top: 30px;
+    padding-right: 20px; */
+    color: red;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media screen and (max-width:1140px) {
+    #contentWrapper {
+        margin-left: 150px;
+    }
+
+    #directory {
+        margin-right: 0px;
+        height: 39px;
+        width: 220px;
+    }
+
+}
+
+@media screen and (max-width:980px) {
+
+    h2{
+        font-size: 18px;
+    }
+
+    .titlebox a {
+        font-size: 15px;
+    }
+
+    .textbox p {
+        font-size: 13px;
+    }
+    
+
+    #tags {
+        float: unset;
+        margin-left:10px;
+    }
+
+    #categoryWrapper {
+        position: unset;
+        margin-left:0px;
+    }
+
+    #contentWrapper {
+        margin-left: 0px;
+    }
+
+    #categoryWrapper ul li {
+        display: inline-block;
+        margin-top:20px;
+        margin-right: 20px;
+        font-size: 14px;
+    }
+
+    #tags a{
+        border:solid;
+        border-width: 2px;
+        padding:2px;
+        border-color: skyblue;
+        border-radius: 5px;
+
+    }
+    
+    #home,
+    #categoryD,
+    #search,
+    #login,
+    #register,
+    #cart,
+    #logout {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    header {
+        height: 78px;
+    }
+
+    #leftdiv input {
+        width: 200px;
+    }
+
+    #logoutdiv{
+        top: 155px;
+    }
+
+    #rightdiv {
+        float: unset;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width:535px) {
+    
+    #search {
+        margin-left: 5px;
+    }
+
+    header {
+        height: 117px;
+    }
+
+    #logoutdiv{
+        top: 225px;
+    }
+
+    #tags {
+        margin-top:40px;
+    }
+
+    #categoryWrapper ul li {
+        margin-top:10px;
+    }
+
+    #search{
+        margin-left: 20px;
+    }
+
+    #leftdiv input {
+        width: 150px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    
+}

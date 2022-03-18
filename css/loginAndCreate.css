@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    background-color: aliceblue;
+}
+
+header {
+    background-color: skyblue;
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+    height: 39px;
+}
+
+header div {
+    padding: 0;
+    margin: 0;
+}
+
+#leftdiv {
+    display: inline-block;
+}
+
+#rightdiv {
+    display: inline;
+    float: right;
+    margin-right: 200px;
+}
+
+#frame {
+    width: 500px;
+    margin: auto;
+    background-color: aliceblue;
+    padding: 20px;
+    text-align: center;
+}
+
+img {
+    width: 30%;
+}
+
+#imgbox {
+    width: 100%;
+    text-align: center;
+}
+
+#title {
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.textField {
+    width: 200px;
+}
+
+#frame button {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: skyblue;
+    border: none;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    width: 80px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#frame button:hover {
+    background-color: #7ec1dc;
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+#warning {
+    text-align: center;
+    display: none;
+    color: red;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#search,
+#login,
+#register,
+#cart,
+#logout {
+    border: none;
+    background: none;
+    font-size: 1em;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#search:hover,
+#login:hover,
+#cart:hover,
+#register:hover,
+#logout:hover {
+    background-color: aliceblue;
+}
+
+#leftdiv input {
+    width: 400px;
+    margin-left: 100px;
+}
+
+#search {
+    margin-left: 5px;
+}
+
+
+
+@media screen and (max-width:1140px) {
+    #leftdiv input {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:1040px) {
+    #leftdiv input {
+        width: 200px;
+    }
+
+    #rightdiv {
+        float: unset;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    header {
+        height: 78px;
+    }
+    
+    #title{
+        margin-top: 80px;
+        font-size: 15px;
+    }
+
+    #search,
+    #login,
+    #register,
+    #cart,
+    #logout {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 13px;
+    }
+
+    #leftdiv input {
+        width: 150px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+
+}
+
+@media screen and (max-width:550px) {    
+    
+    #frame {
+        width: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
