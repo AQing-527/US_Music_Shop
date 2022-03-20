@@ -52,7 +52,7 @@ else if($_GET["check"]){
 
 function getAll()
 {
-    $conn = mysqli_connect('sophia.cs.hku.hk', 'xqchen2', 'cxqcxq27', 'xqchen2') or die("Connection error." . mysqli_connect_error($conn));
+    $conn = mysqli_connect(hostname, username, password,database) or die("Connection error." . mysqli_connect_error($conn));
 
     $result = mysqli_query($conn, 'select * from music') or die("Query error." . mysqli_error($conn));
     $json_str = json_encode(mysqli_fetch_all($result, MYSQLI_ASSOC));
@@ -65,7 +65,7 @@ function getAll()
 
 function getDetail()
 {
-    $conn = mysqli_connect('sophia.cs.hku.hk', 'xqchen2', 'cxqcxq27', 'xqchen2') or die("Connection error." . mysqli_connect_error($conn));
+    $conn = mysqli_connect(hostname, username, password,database) or die("Connection error." . mysqli_connect_error($conn));
 
     $result = mysqli_query($conn, 'select * from music where MusicId = '.$_GET["range"]) or die("Query error." . mysqli_error($conn));
     $json_str = json_encode(mysqli_fetch_all($result, MYSQLI_ASSOC));
@@ -76,7 +76,7 @@ function getDetail()
 }
 
 function getCart(){
-    $conn = mysqli_connect('sophia.cs.hku.hk', 'xqchen2', 'cxqcxq27', 'xqchen2') or die("Connection error." . mysqli_connect_error($conn));
+    $conn = mysqli_connect(hostname, username, password,database) or die("Connection error." . mysqli_connect_error($conn));
 
     $result = mysqli_query($conn,'select M.MusicId, M.MusicName, sum(C.Quantity) as Quantity, M.Price from music M, cart C where C.UserId='.$_GET["user"].'and M.MusicId=C.MusicId group by M.MusicId') or die("Query error." . mysqli_error($conn));
 
@@ -88,7 +88,7 @@ function getCart(){
 }
 
 function getCartNum(){
-    $conn = mysqli_connect('sophia.cs.hku.hk', 'xqchen2', 'cxqcxq27', 'xqchen2') or die("Connection error." . mysqli_connect_error($conn));
+    $conn = mysqli_connect(hostname, username, password,database) or die("Connection error." . mysqli_connect_error($conn));
 
     $result = mysqli_query($conn,'select sum(Quantity) as Quantity from cart where UserId='.$_GET["user"]) or die("Query error." . mysqli_error($conn));
 
@@ -101,7 +101,7 @@ function getCartNum(){
 }
 
 function deleteCart(){
-    $conn = mysqli_connect('sophia.cs.hku.hk', 'xqchen2', 'cxqcxq27', 'xqchen2') or die("Connection error." . mysqli_connect_error($conn));
+    $conn = mysqli_connect(hostname, username, password,database) or die("Connection error." . mysqli_connect_error($conn));
 
     $result = mysqli_query($conn,'delete from cart where UserId='.$_GET["user"].';') or die("Query error." . mysqli_error($conn));
 
@@ -114,7 +114,7 @@ function deleteCart(){
 }
 
 function deleteCartItem(){
-    $conn = mysqli_connect('sophia.cs.hku.hk', 'xqchen2', 'cxqcxq27', 'xqchen2') or die("Connection error." . mysqli_connect_error($conn));
+    $conn = mysqli_connect(hostname, username, password,database) or die("Connection error." . mysqli_connect_error($conn));
 
     $result = mysqli_query($conn,'delete from cart where UserId='.$_GET["user"].' and MusicId='.$_GET["range"].';') or die("Query error." . mysqli_error($conn));
 
@@ -145,7 +145,7 @@ function deleteCartItemFromSession(){
 }
 
 function checkuser(){
-    $conn = mysqli_connect('sophia.cs.hku.hk', 'xqchen2', 'cxqcxq27', 'xqchen2') or die("Connection error." . mysqli_connect_error($conn));
+    $conn = mysqli_connect(hostname, username, password,database) or die("Connection error." . mysqli_connect_error($conn));
 
     $result = mysqli_query($conn,'select UserId from login where UserId='.$_GET["check"].';') or die("Query error." . mysqli_error($conn));
 

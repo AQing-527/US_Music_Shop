@@ -48,7 +48,7 @@ if (!isset($_SESSION['username'])){
         <ul id="tags">
         <li><h2>Category</h2></li>
         <?php
-        $conn = mysqli_connect('sophia.cs.hku.hk','xqchen2','cxqcxq27','xqchen2') or die ("Connection error.".mysqli_connect_error());
+        $conn = mysqli_connect(hostname, username, password,database) or die ("Connection error.".mysqli_connect_error());
         $result = mysqli_query($conn,'select distinct Category from music;') or die ("Query error.".mysqli_error($conn));
         ?>
         <?php

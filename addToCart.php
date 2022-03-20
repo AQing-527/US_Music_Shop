@@ -7,7 +7,7 @@ if (isset($_SESSION['username'])){
     $quantity = $_POST['quantity'];
     $cartId = 0;
 
-    $conn = mysqli_connect('sophia.cs.hku.hk','xqchen2','cxqcxq27','xqchen2') or die ("Connection error.".mysqli_connect_error());
+    $conn = mysqli_connect(hostname, username, password,database) or die ("Connection error.".mysqli_connect_error());
     $result = mysqli_query($conn,'select max(CartId) as CartId from cart;') or die ("Query error.".mysqli_error($conn));
     if(mysqli_num_rows($result)==0){
         $cartId = 1;
